@@ -67,8 +67,7 @@ else
 	" && exit 1
 
 fi
-
-uuid=$(cat /proc/sys/kernel/random/uuid)
+=$(cat /proc/sys/kernel/random/uuid)
 old_id="e55c8d17-2cf3-b21a-bcf1-eeacb011ed79"
 v2ray_server_config="/etc/v2ray/config.json"
 v2ray_client_config="/etc/v2ray/233blog_v2ray_config.json"
@@ -898,7 +897,7 @@ config() {
 	chmod +x $_v2ray_sh
 
 	v2ray_id=$uuid
-	alterId=9
+	alterId=233
 	ban_bt=true
 	if [[ $v2ray_transport -ge 18 ]]; then
 		v2ray_dynamicPort_start=${v2ray_dynamic_port_start_input}
